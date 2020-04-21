@@ -1,0 +1,35 @@
+{
+  "name": "job_finder",
+  "version": "1.0.0",
+  "description": "Este sistema é um portal de busca de vaga de emprego pra programadores de diversas áreas.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroLimass/Job_Finder.git"
+  },
+  "keywords": [
+    "dev",
+    "jobs",
+    "first",
+    "API"
+  ],
+  "author": "Pedro Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroLimass/Job_Finder/issues"
+  },
+  "homepage": "https://github.com/PedroLimass/Job_Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "sequelize": "^5.21.6",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
