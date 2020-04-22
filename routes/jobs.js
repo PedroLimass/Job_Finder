@@ -4,9 +4,9 @@ const express = require('express');
 const router = express.Router();
 const Job = require('../models/Job');
 
-//Teste de rota | Utilizando o Postman
-router.get('/test', (req, res) =>{
-	res.send('Deu certo! REalmente a rota deu bom');
+//Teste de rota | Utilizando o Postman | ACESSO A ROTA PELO HANDLEBARS
+router.get('/add', (req, res) => {
+	res.render('add');
 });
 
 //Fim do teste
