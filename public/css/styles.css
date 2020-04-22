@@ -250,7 +250,13 @@
 
 
 
+/* Responsivo */
 
+@media (max-width: 481px) {
+	#navbarNav{
+		text-align: center;
+	}
+}
 
 
 
