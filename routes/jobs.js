@@ -11,8 +11,20 @@ router.get('/add', (req, res) => {
 
 //Fim do teste
 
-//add job via POST
+//detalhe da vaga -> view/1 view/2
+router.get('/views/:id', (req,res) => Job.findOne({
+	where: {id: req.params.id}
+}).then(job => {
 
+	res.render('view', {
+		job
+	});
+
+  }).catch(err => console.log(err)));
+
+
+
+//add job via POST
 router.post('/add', (req, res) => {
 
 	let{title, salary, company, description, email, new_job} = req.body; //Todos os dados vem por essa propriedadew
